@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>教程</title>
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel="icon" href="images/2.JPG">
+    <script type="text/javascript" src="JS/jquery-3.3.1.js"></script>
+</head>
+<!--<script type="text/javascript">-->
+<!--    function change(){-->
+<!--    var lo=document.getElementsByClassName('box');-->
+<!--        lo.classList.add('box1');-->
+
+<!--    };-->
+<!--    // console.log(lo);-->
+
+<!--</script>-->
+<body>
+    <div class="jq">
+        <div class="box">
+
+        </div>
+        <input id="one" type="button" value="一个值" oncilik="change()">
+        <input id="two" type="button" value="二个值" oncilik="">
+        <input id="there" type="button" value="三个值" oncilik="">
+        <input id="four" type="button" value="四个值" oncilik="">
+    </div>
+    <script>
+        $("#one").click(function() {
+            $(".box").addClass('box1')
+        });
+        $("#two").click(function() {
+                $(".box").addClass('box2');
+        });
+        $("#there").click(function() {
+                $(".box").addClass('box3');
+        });
+        $("#four").click(function() {
+                $(".box").addClass('box4');
+        });
+    </script>
+</body>
+
+
+</html>

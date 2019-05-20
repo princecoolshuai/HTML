@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.jq {
+    margin-top: 250px;
+    text-align: center;
+}
+
+input {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 200px;
+    height: 100px;
+    background-color: #409eff;
+    border: 1px solid #409eff;
+    border-radius: 4px;
+    /* box-shadow:
+            h-shadow :水平阴影的位置。允许负值
+            v-shadow ：垂直阴影的位置。允许负值
+            blur ：可选。模糊距离
+            spread ：可选。阴影的大小
+            color ：可选。阴影的颜色。在CSS值颜色电子邮件寻找颜色值的完整列表
+            inset; ：可选。从外层的阴影（开始时）改变阴影内侧阴影
+    */
+    box-shadow: 0px 5px 0px #006ad4;
+    /* 过度 transition: 
+    transition-property： CSS 属性的名称 
+    transition-duration：过渡效果花费的时间 
+    transition-timing-function：过渡效果的时间曲线 
+    ransition-delay：规定过渡效果何时开始 指定要添加效果的CSS属性 指定效果的持续时间。 */
+    transition: all 0.8s;
+}
+
+input:hover {
+    background-color: #67c23a;
+    border: 1px solid #67c23a;
+    box-shadow: 0px 2px 0px #2e8b00;
+    /*2D转换
+        translate(x,y)方法，从当前元素位置移动。
+        rotate(角度)方法，
+        scale（）方法用于增加或缩小元素的大小。
+        skew(x,y) 方法，倾斜
+
+    */
+    transform: translate(0px, 2px);
+}
+
+.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+}
+
+
+/* 一个值时表示四个值相同 */
+
+.box1 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 90px;
+}
+
+
+/* 两个值时
+    第一个：左上和右下
+    第二个：右上和左下
+ */
+
+.box2 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 90px 45px;
+}
+
+
+/* 三个值时表示：
+    第一个表示左上角
+    第二个表示右上和左下
+    第三个表示右下
+ */
+
+.box3 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 90px 70px 50px;
+}
+
+
+/* 四个值时：
+    第一个值为左上角
+    第二个值为右上角
+    第三个值为右下角
+    第四个值为左下角 */
+
+.box4 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 90px 60px 75px 40px;
+}
